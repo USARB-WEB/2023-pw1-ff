@@ -1,0 +1,1 @@
+De elaborat o aplicatie web cu utilizarea unui framework JavaScript: VueJS, React, Angular 
