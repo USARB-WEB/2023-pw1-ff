@@ -3,7 +3,7 @@
 ## Însărcinări
 ### - Sarcina 1 **[2 puncte]** 
 
-Creați un repozitoriu privat `ep-13.03.2023` pe Github. Deschideți acces pentru `sergiuchilat`.
+Creați un repozitoriu privat `ep-26.05.2023` pe Github. Deschideți acces pentru `sergiuchilat`.
 
 
 ### - Sarcina 2 **[4 puncte]**
