@@ -3,14 +3,14 @@
 ## Însărcinări
 ### - Sarcina 1 **[2 puncte]** 
 
-Creați un repozitoriu privat `ep-26.05.2023` pe Github. Deschideți acces pentru `sergiuchilat`.
+Creați un repozitoriu privat `examen-06.06.2023` pe Github. Deschideți acces pentru `sergiuchilat`.
 
 
 ### - Sarcina 2 **[4 puncte]**
 
 Elaborați o funcție care primește ca parametru o propoziție și returnează această propoziție transformată - ultima literă a fiecărui cuvînt va fi majusculă. Rezultatul va fi afișat în consolă.
 
-Exemplu: uppercaseLastLetter("astazi este joi") va returna "astazI estE joI" 
+Exemplu: uppercaseLastLetter("astazi este marti") va returna "Astazi Este Marti" 
 
 ### - Sarcina 3 **[4 puncte]**
 
@@ -21,32 +21,32 @@ Exemplu: la intrare avem masivul `[0, -5, 4, 3, -2, 8, 10]`. La ieșire vom avea
 
 ### - Sarcina 4 **[5 puncte]**
 
-Creați un masiv care va conține datele despre o listă de Servicii. Fiecare serviciu are următoarele cîmpuri:
+Creați un masiv care va conține datele despre o listă de Produse. Fiecare produs are următoarele cîmpuri:
 - denumire
 - preț
-- durata(în ore)
+- cantitate(unități)
 
 Creați 2 metode:
-- findHigherPricePerHour - care va găsi serviciul cu cel mai mare tarif pe ora
+- findHigherQuantity - care va găsi serviciul cu cea mai mare cantitate în stoc
 
 Exemplu:
 La intrare:
 ```
 [
     {
-        "name": "Elaborare unei aplicații mobile",
+        "name": "Meat",
         "price": 15.00,
-        "duration": 3
+        "quantity": 3
     },
     {
-        "name": "Elaborarea unui site web",
+        "name": "Bread",
         "price": 6.50,
-        "duration": 2
+        "quantity": 2
     },
     {
-        "name": "Elaborarea unei aplicații desktop",
+        "name": "Milk",
         "price": 127.00,
-        "duration": 120
+        "quantity": 120
     }
 ]
 ```
@@ -54,15 +54,14 @@ La intrare:
 La ieșire:
 ```
     {
-        "name": "Elaborare unei aplicații mobile",
-        "price": 15.00,
-        "duration": 3,
-        "hour_price": 5
+        "name": "Elaborarea unei aplicații desktop",
+        "price": 127.00,
+        "quantity": 120
     }
 ```
 
 
-- calculateTotalCost - care va returna costul total pentru toate serviciile
+- calculateTotalCost - care va returna costul total pentru toate produsele
 
 Exemplu:
 
@@ -70,19 +69,19 @@ La intrare:
 ```
 [
     {
-        "name": "Elaborare unei aplicații mobile",
+        "name": "Meat",
         "price": 15.00,
-        "duration": 3
+        "quantity": 3
     },
     {
-        "name": "Elaborarea unui site web",
+        "name": "Bread",
         "price": 6.50,
-        "duration": 2
+        "quantity": 2
     },
     {
-        "name": "Elaborarea unei aplicații desktop",
+        "name": "Milk",
         "price": 127.00,
-        "duration": 120
+        "quantity": 1
     }
 ]
 ```
@@ -92,17 +91,17 @@ La ieșire:
 `Costul total: 148.50`
 
 Explicație:
-Costul total = 15.00 + 6.50 + 127.00 = 148.50 
+Costul total = 15.00 * 3 + 6.50 * 2 + 127.00 * 1 = 170.00 
 
 
 ### - Sarcina 5 **[5 puncte]**
 
-De creat o interfață cu 2 butoane(- și +) și un input de tip număr.
+De creat o interfață cu 2 butoane('<' și '>') și un input de tip număr.
 Valoarea implicită a numărului va fi "50".
-La click pe butonul "-" valoarea se va micșora cu 10 iar la dublu click valoarea se va micșora cu 5.
-La click pe butonul "+" valoarea se va mări cu 10 iar la dublu click valoarea se va mări cu 5.
+La click pe butonul "<" valoarea se va micșora cu 10 iar la dublu click valoarea se va micșora cu 5.
+La click pe butonul ">" valoarea se va mări cu 10 iar la dublu click valoarea se va mări cu 5.
 Este necesar de adăugat următoarea restricție: valoarea în input poate fi din segmentul [0, 100].
-Explicație: Dacă valoarea curentă este 5 și se face click pe butonul ”-”, atunci se va ignora acest eveniment și valoarea va rămîne 5, deoarece 5 - 10 = -5, astfel valoarea în input va deveni negativă.
+Explicație: Dacă valoarea curentă este 5 și se face click pe butonul ”<”, atunci se va ignora acest eveniment și valoarea va rămîne 5, deoarece 5 - 10 = -5, astfel valoarea în input va deveni negativă.
 
 ## Timp pentru realizare 
 90 minute
